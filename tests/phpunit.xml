@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<phpunit bootstrap="../../../../tests/Bootstrap.php">
+    <testsuites>
+        <testsuite name="Boodmo Sales Module Test">
+            <directory suffix="Test.php">./</directory>
+        </testsuite>
+        <testsuite name="workflow">
+              <directory>./Model/</directory>
+        </testsuite>
+    </testsuites>
+
+    <filter>
+        <whitelist addUncoveredFilesFromWhitelist="true">
+            <directory suffix='.php'>../src/</directory>
+            <exclude>
+                  <directory suffix=".php">../tests/</directory>
+            </exclude>
+        </whitelist>
+    </filter>
+</phpunit>
