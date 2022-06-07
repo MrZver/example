@@ -1,11 +1,11 @@
 Sales module
 ================
 
-Sales модуль занимаеться построением OrderManagement, Product Inventory, CheckoutManagement, integration for Payment & Shipping systems
+Sales module builds OrderManagement, Product Inventory, CheckoutManagement, integration for Payment & Shipping systems
 
-- SalesService - фасад для операций над товарами, поставщиками этих товаров, цены
-- CheckoutService - фасад занимающийся жизненым циклом от добавления в корзину, до оформления заказа
-- OrderService - управляет и предоставляет доступ до операций над заказами (пакетов, айтемов)
-- PaymentService - занимается оплатами и возратами заказов
-- InvoiceService - инвойсы к заказам (формирование, отсылка, отчеты, хранение)
-- FinanceService - финансовая система (финмониторинг, репорты, бугхучет), интегрирует ZohoBooks, как PaaS подсистему к OrderManagement
+- SalesService - facade for operations on goods, suppliers of these goods, prices
+- CheckoutService - a facade that deals with the life cycle from adding to the cart to placing an order
+- OrderService - manages and provides access to operations on orders (packages, items)
+- PaymentService - deals with payments and returns of orders
+- InvoiceService - invoices for orders (formation, sending, reports, storage)
+- FinanceService - financial system (financial monitoring, reports, accounting), integrates ZohoBooks as a PaaS subsystem to OrderManagement
